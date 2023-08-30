@@ -1,0 +1,51 @@
+.carousel-caption {
+    /* min-height: fit-content; */
+    position: static;
+    padding: 0;
+}
+
+.carousel-item {
+    height: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content */
+
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the child element */
+    height: calc(60vh - 58px);
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* For screens wider than 768px */
+@media (min-width: 769px) {
+    .carousel-item {
+        transform: translateY(-25%);
+    }
+}
+
+/* For screens narrower than 768px */
+@media (max-width: 768px) {
+    .carousel-inner {
+        top: 0;
+        overflow: scroll !important;
+    }
+    .carousel-caption {
+        top: 0%;
+        height: 40vh;
+    }
+    .carousel-indicators {
+        position: relative !important;
+    }
+}
+

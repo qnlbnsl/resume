@@ -1,0 +1,8 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 5%;
+}

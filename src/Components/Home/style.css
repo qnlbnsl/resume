@@ -1,0 +1,55 @@
+/* For screens narrower than 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .profile-image {
+        height: 40vh;
+        width: auto; /* To maintain aspect ratio */
+    }
+    .intro-container {
+        padding-top: 20px;
+    }
+    .intro-container {
+        min-height: 40vh; /* Or whatever height you think is adequate */
+        width: 100%;
+        overflow: auto; /* Enable scrolling for overflowing content */
+    }
+    .image-container {
+
+        align-items: stretch;
+        padding-top: 10px;
+    }
+}
+
+/* For screens wider than 768px */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row-reverse;
+    }
+    .profile-image {
+        width: 100%;
+        height: auto; /* To maintain aspect ratio */
+    }
+    .intro-container {
+        flex-direction: row;
+        flex: 6;
+    }
+    .image-container {
+        flex-direction: row;
+        flex: 4;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.image-container
+.intro-container {
+    text-align: center;
+    min-width: 0;
+    display: inherit;
+    flex-direction: inherit;
+    align-items: stretch;
+}
