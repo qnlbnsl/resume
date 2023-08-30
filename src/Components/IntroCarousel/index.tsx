@@ -8,14 +8,16 @@ function Intro() {
         setCurrentSectionIndex(selectedIndex);
     };
     return (
-        <Carousel
-            variant="dark"
+        <div className="Intro">
+            <Carousel
+            data-bs-theme="dark"
             activeIndex={currentSectionIndex}
             onSelect={handleSelect}
+            className="Intro-Carousel"
         >
             {intro.map((section, index) => (
-                <Carousel.Item key={index} interval={100000}>
-                    <Carousel.Caption>
+                <Carousel.Item key={index} interval={100000} className="Intro-Carousel-Item">
+                    <Carousel.Caption className="Intro-Carousel-Caption">
                         <div>
                             <h3 className="h-6">{section.title}</h3>
                             <p className="fs-6">{section.content}</p>
@@ -24,6 +26,7 @@ function Intro() {
                 </Carousel.Item>
             ))}
         </Carousel>
+        </div>
     );
 }
 
