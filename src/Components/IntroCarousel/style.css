@@ -19,6 +19,9 @@
         /* margin-bottom: 58px; */
         align-items: center;
     }
+    .Intro-Carousel {
+        width : 100%;
+    }
     .Intro-Carousel-Item {
         height: 75%;
     }
@@ -49,15 +52,8 @@
         right: 0 !important;
         left: 0 !important;
         margin: auto;
-        /* top: 0;
-        bottom: 0; */
         height: 100%;
     }
-    /* .Intro-Carousel-Caption h3 {
-        font-size: 1.5rem;
-    }
-    .Intro-Carousel-Caption p {
-        font-size: 1rem;
-    } */
+
 }
 
