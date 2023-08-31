@@ -39,9 +39,9 @@ function WorkTimeline() {
                 </Chrono>
             </div>
             <div className="workExQuote fs-3" >
-                With great power came responsibility. Responsibility that I was ready for.
+            Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.
             </div>
-                <div className="quoteAuthor fs-6"> - Kunal Bansal</div>
+                <div className="quoteAuthor fs-6"> - Steve Jobs</div>
         </div>
     );
 }
