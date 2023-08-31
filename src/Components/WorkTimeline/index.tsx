@@ -41,7 +41,7 @@ function WorkTimeline() {
             <div className="workExQuote fs-3" >
             Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.
             </div>
-                <div className="quoteAuthor fs-6"> - Steve Jobs</div>
+                <div className="quoteAuthor fs-5"> - Steve Jobs</div>
         </div>
     );
 }
