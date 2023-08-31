@@ -1,11 +1,13 @@
 import React from "react";
 
 function Hobbies() {
-    return <header className="App-header">
-    <p>
-      Edit <code>src/App.tsx</code> and save to reload.
-    </p>
-  </header>;
+    return (
+        <div className="Hobbies">
+            <p>
+                Edit <code>src/App.tsx</code> and save to reload.
+            </p>
+        </div>
+    );
 }
 
 export default Hobbies;

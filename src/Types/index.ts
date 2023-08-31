@@ -12,4 +12,4 @@ export type FormData = {
     email: string;
     subject: string;
     message: string;
-}
+};

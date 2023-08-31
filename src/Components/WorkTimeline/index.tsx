@@ -3,11 +3,10 @@ import React from "react";
 import { Chrono } from "react-chrono";
 import { items } from "../../Data/workex";
 
-import WorkTimelineCard from './../WorkTimelineCard'
+import WorkTimelineCard from "./../WorkTimelineCard";
 import "./style.css";
 
 function WorkTimeline() {
-
     return (
         <div className="workex">
             <div className="workexChronoWrapper">
@@ -38,10 +37,12 @@ function WorkTimeline() {
                     })}
                 </Chrono>
             </div>
-            <div className="workExQuote fs-3" >
-            Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.
+            <div className="workExQuote fs-3">
+                Your work is going to fill a large part of your life, and the
+                only way to be truly satisfied is to do what you believe is
+                great work.
             </div>
-                <div className="quoteAuthor fs-5"> - Steve Jobs</div>
+            <div className="quoteAuthor fs-5"> - Steve Jobs</div>
         </div>
     );
 }

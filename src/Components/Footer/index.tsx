@@ -5,9 +5,7 @@ export default function Footer() {
     return (
         <div className="Footer text-center text-lg-center">
             <div className="d-lg-block">
-                <span>
-                    Get connected on social networks:
-                </span>
+                <span>Get connected on social networks:</span>
             </div>
             <div>
                 <a

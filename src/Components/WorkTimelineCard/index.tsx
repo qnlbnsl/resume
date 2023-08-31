@@ -10,10 +10,15 @@ export default function WorkTimelineCard(props: WorkExperience) {
     const handleShow = () => setShowModal(true);
 
     const formatDate = (date: Date) => {
-        return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
+            2,
+            "0"
+        )}`;
     };
 
-    const endDate = props.dateStopped ? formatDate(props.dateStopped) : 'Present';
+    const endDate = props.dateStopped
+        ? formatDate(props.dateStopped)
+        : "Present";
 
     return (
         <>
@@ -21,12 +26,16 @@ export default function WorkTimelineCard(props: WorkExperience) {
                 <div className="workexCardTitle">
                     <h3>{props.title}</h3>
                     <h4>{props.subtitle}</h4>
-                    <span className="workexCardDate">{formatDate(props.dateStarted)} - {endDate}</span>
+                    <span className="workexCardDate">
+                        {formatDate(props.dateStarted)} - {endDate}
+                    </span>
                 </div>
                 <div className="workexCardText">
                     <p>{props.detailedText}</p>
                 </div>
-                <Button className="detailsButton" onClick={handleShow}>See Details</Button>
+                <Button className="detailsButton" onClick={handleShow}>
+                    See Details
+                </Button>
             </div>
 
             <Modal show={showModal} onHide={handleClose} centered>

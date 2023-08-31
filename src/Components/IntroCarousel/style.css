@@ -1,11 +1,8 @@
-
 .Intro {
     display: inherit;
 }
 .Intro-Carousel-Caption {
-
 }
-
 
 /* For screens wider than 768px */
 @media (min-width: 769px) {
@@ -19,7 +16,7 @@
         align-items: center;
     }
     .Intro-Carousel {
-        width : 100%;
+        width: 100%;
     }
     .Intro-Carousel-Item {
         height: 75%;
@@ -43,7 +40,7 @@
         flex: 5;
     }
     .Intro-Carousel {
-        width : 100%;
+        width: 100%;
     }
     .carousel-inner {
         height: 50vh;
@@ -64,8 +61,5 @@
         height: 100%;
     }
     .carousel-div {
-
     }
-
 }
-
