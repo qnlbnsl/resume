@@ -3,24 +3,33 @@
     display: inherit;
     flex-direction: inherit;
 }
-
 .profile-image {
     border-radius: 5%;
-    height: 50vh;
+    height: 50vw;
+    max-height: 50vh;
 }
-
 /* For screens wider than 768px */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .image-container {
         flex: 4;
+    }
+    .profile-image {
+        border-radius: 5%;
+        height: 50%;
+        max-height: 50vh;
     }
 
 }
 
 /* For screens narrower than 768px */
-@media (max-width: 769px) {
+@media (max-width: 999px) {
     .image-container {
         padding-top: 10px;
+    }
+    .profile-image {
+        border-radius: 5%;
+        height: 50%;
+        max-height: 50vh;
     }
 }
 

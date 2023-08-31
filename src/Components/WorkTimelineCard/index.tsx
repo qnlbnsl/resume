@@ -29,7 +29,7 @@ export default function WorkTimelineCard(props: WorkExperience) {
                 <Button className="detailsButton" onClick={handleShow}>See Details</Button>
             </div>
 
-            <Modal show={showModal} onHide={handleClose}>
+            <Modal show={showModal} onHide={handleClose} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Job Details for {props.title}</Modal.Title>
                 </Modal.Header>

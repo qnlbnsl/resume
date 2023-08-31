@@ -1,9 +1,51 @@
 .workex {
     align-items: center;
 }
-
+.workexChronoWrapper {
+    border-bottom: 5px solid #e8e8e8;
+    align-items: center;
+}
+.workexTitle {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 5px solid #e8e8e8;
+}
 .rc-card-text {
     flex-direction: row !important;
+}
+.workExQuote {
+    font-size: 2em;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.workExQuote::before,
+.workExQuote::after {
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.workExQuote::before {
+    content: "“";
+    position: relative;
+}
+
+.workExQuote::after {
+    content: "”";
+    position: relative;
+}
+
+.quoteAuthor {
+    font-size: 1.2rem; /* adjust as needed */
+    font-weight: 500; /* adjust as needed */
+    color: #666; /* adjust as needed */
+    /* position: absolute; */
+    /* bottom: 0; */
+    text-align: center;
 }
 
 @media (min-width: 769px) {
@@ -17,8 +59,7 @@
     .card-content-wrapper {
         /* width: 60% !important; */
     }
-    div[data-testid='vertical-item-row'] div[mode='VERTICAL_ALTERNATING'] {
+    div[data-testid="vertical-item-row"] div[mode="VERTICAL_ALTERNATING"] {
         /* width: 20% !important; */
     }
-
 }

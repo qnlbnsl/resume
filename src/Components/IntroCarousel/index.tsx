@@ -16,9 +16,9 @@ function Intro() {
             className="Intro-Carousel"
         >
             {intro.map((section, index) => (
-                <Carousel.Item key={index} className="Intro-Carousel-Item">
+                <Carousel.Item key={index} className="Intro-Carousel-Item" interval={100000}>
                     <Carousel.Caption className="Intro-Carousel-Caption">
-                        <div>
+                        <div className="carousel-div">
                             <h3 className="h-6">{section.title}</h3>
                             <p className="fs-6">{section.content}</p>
                         </div>

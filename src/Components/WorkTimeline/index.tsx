@@ -10,32 +10,38 @@ function WorkTimeline() {
 
     return (
         <div className="workex">
-            <Chrono
-                timelinePointShape="circle"
-                mode="VERTICAL_ALTERNATING"
-                // showAllCardsHorizontal={true}
-                useReadMore={true}
-                hideControls
-                scrollable
-                fontSizes={{
-                    title: "h-6",
-                }}
-            >
-                {items.map((item, index) => {
-                    return (
-                        <WorkTimelineCard
-                            key={index}
-                            title={item.title}
-                            subtitle={item.subtitle}
-                            detailedText={item.detailedText}
-                            detailedPoints={item.detailedPoints}
-                            dateStarted={item.dateStarted}
-                            dateStopped={item.dateStopped}
-                        />
-                    );
-                })}
-            </Chrono>
-            <img className="workexImage" src="https://i.imgur.com/0Ql4q8M.png" alt="workex" />
+            <div className="workexChronoWrapper">
+                <h1 className="workexTitle">Work Experience</h1>
+                <Chrono
+                    timelinePointShape="circle"
+                    mode="VERTICAL_ALTERNATING"
+                    // showAllCardsHorizontal={true}
+                    useReadMore={true}
+                    hideControls
+                    scrollable
+                    fontSizes={{
+                        title: "h-6",
+                    }}
+                >
+                    {items.map((item, index) => {
+                        return (
+                            <WorkTimelineCard
+                                key={index}
+                                title={item.title}
+                                subtitle={item.subtitle}
+                                detailedText={item.detailedText}
+                                detailedPoints={item.detailedPoints}
+                                dateStarted={item.dateStarted}
+                                dateStopped={item.dateStopped}
+                            />
+                        );
+                    })}
+                </Chrono>
+            </div>
+            <div className="workExQuote fs-3" >
+                With great power came responsibility. Responsibility that I was ready for.
+            </div>
+                <div className="quoteAuthor fs-6"> - Kunal Bansal</div>
         </div>
     );
 }
