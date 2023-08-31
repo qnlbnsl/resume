@@ -1,4 +1,17 @@
-.Footer{
-    height: 5vh;
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2B3035;
+    padding: 0 2em;
+    color: #CACBCC;
+}
+
+@media screen and (min-width: 768px) {
+    .Footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5em;
+    }
 }
 

@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TabBar from './Components/TabBar';
 import Home from './Components/Home';
 import About from './Components/About';
-import Contact from './Components/Contact';
+import Projects from './Components/Projects';
 import NotFound from './Components/NotFound';
 import './App.css';
 import Footer from './Components/Footer';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './custom.scss';
+import WorkTimeline from './Components/WorkTimeline';
+import Hobbies from './Components/Hobbies';
 function App() {
     return (
         <Router>
@@ -19,7 +21,9 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/work" element={<WorkTimeline />} />
+                        <Route path="/hobbies" element={<Hobbies />} />
+                        <Route path="/projects" element={<Projects />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </div>

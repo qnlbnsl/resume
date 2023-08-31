@@ -4,8 +4,6 @@ import "./style.css";
 
 function HeroPicture() {
     return (
-        <div className="hero-container">
-            {/* Image Container */}
             <div className="image-container">
                 <img
                     src="/static/images/home.jpg"
@@ -13,7 +11,6 @@ function HeroPicture() {
                     className="profile-image"
                 />
             </div>
-        </div>
     )
 }
 

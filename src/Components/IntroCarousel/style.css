@@ -1,51 +1,71 @@
-.carousel-caption {
-    /* min-height: fit-content; */
-    position: static;
-    padding: 0;
-}
 
-.carousel-item {
-    height: 100%;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content */
+.Intro {
+    display: inherit;
+}
+.Intro-Carousel-Caption {
 
 }
 
-.carousel-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically centers the child element */
-    height: calc(60vh - 58px);
-}
-
-.carousel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 /* For screens wider than 768px */
 @media (min-width: 769px) {
-    .carousel-item {
-        transform: translateY(-25%);
+    .Intro {
+        flex-direction: row;
+        flex: 6;
+    }
+    .carousel-inner {
+        height: 52vh;
+        top: 25vh;
+        align-items: center;
+    }
+    .Intro-Carousel {
+        width : 100%;
+    }
+    .Intro-Carousel-Item {
+        height: 75%;
+        position: relative;
+    }
+    .Intro-Carousel-Caption {
+        /* position: relative !important; */
+        /* width: 75vw; */
+        /* right: 0 !important;
+        left: 0 !important; */
+        /* margin: auto; */
+        /* height: 100%; */
+        bottom: 15% !important;
     }
 }
 
 /* For screens narrower than 768px */
 @media (max-width: 768px) {
+    .Intro {
+        flex-direction: column;
+        flex: 5;
+    }
+    .Intro-Carousel {
+        width : 100%;
+    }
     .carousel-inner {
-        top: 0;
-        overflow: scroll !important;
+        height: 50vh;
+        margin-top: 5vh;
+        margin-bottom: 58px;
+        align-items: center;
     }
-    .carousel-caption {
-        top: 0%;
-        height: 40vh;
+    .Intro-Carousel-Item {
+        height: 100%;
+        /* overflow: scroll; */
     }
-    .carousel-indicators {
+    .Intro-Carousel-Caption {
         position: relative !important;
+        width: 75vw;
+        right: 0 !important;
+        left: 0 !important;
+        margin: auto;
+        height: 100%;
     }
+    .carousel-div {
+
+    }
+
 }
 
