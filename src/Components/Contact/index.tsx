@@ -2,14 +2,16 @@ import React, { useState } from "react";
 
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-
+import {FormData} from './../../Types'
+import {sendEmail} from "./../../Utils/sendEmail"
 function Contact() {
-    const [formData, setFormData] = useState({
+    const emptyFormData: FormData = {
         name: '',
         email: '',
         subject: '',
         message: ''
-    });
+    }
+    const [formData, setFormData] = useState({ ...emptyFormData} );
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleChange = (e: any) => {
         const { name, value } = e.target;
@@ -20,8 +22,9 @@ function Contact() {
     };
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleSubmit = (e: any) => {
-
+        sendEmail(formData)
         // Code to send email here
+        // TODO: Show some sort of success message
     };
 
     return (

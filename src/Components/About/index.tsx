@@ -1,12 +1,13 @@
 import React from "react";
-
+import "./style.css";
+import Contact from "../Contact";
 
 function About() {
-    return <header className="App-header">
-    <p>
-      Edit <code>src/App.tsx</code> and save to reload.
-    </p>
-  </header>;
+    return (
+        <div className="About">
+            <Contact />
+        </div>
+    );
 }
 
 export default About;

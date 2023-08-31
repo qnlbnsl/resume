@@ -1,11 +1,17 @@
-# Getting Started with Create React App
+# Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This project uses MD Bootstrap for styling and React Router for routing.
+This project has the following libraries:
+
+1. React
+2. [React Bootstrap](https://react-bootstrap.github.io/)
+3. [React Router](https://reactrouter.com/en/main)
+4. [Material Design UI](https://mdbootstrap.com/docs/react/) for Bootstrap and React (used for icons)
+5. [React Chrono](https://react-chrono.vercel.app/features/custom-content.html) for workex timeline
 
 ## Setup
 
-  Ensure you have node 18 with yarn installed on your machine.
+  Ensure you have `node 18` with yarn installed on your machine.
   Clone the repo and run `yarn install` to install all dependencies.
 
 ## Available Scripts

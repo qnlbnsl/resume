@@ -14,11 +14,10 @@ function TabBar() {
           <Navbar.Collapse id="navbarScroll">
             <Nav className="justify-content-end" style={{ width: '100%' }}>
               <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/workex">Work Experience</Nav.Link>
+              <Nav.Link as={Link} to="/work">Work Experience</Nav.Link>
               <Nav.Link as={Link} to="/hobbies">Hobbies</Nav.Link>
               <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
-              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Col>

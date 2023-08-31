@@ -1,0 +1,24 @@
+.workex {
+    align-items: center;
+}
+
+.rc-card-text {
+    flex-direction: row !important;
+}
+
+@media (min-width: 769px) {
+    .workex {
+        flex-direction: row;
+        flex: 6;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-content-wrapper {
+        /* width: 60% !important; */
+    }
+    div[data-testid='vertical-item-row'] div[mode='VERTICAL_ALTERNATING'] {
+        /* width: 20% !important; */
+    }
+
+}

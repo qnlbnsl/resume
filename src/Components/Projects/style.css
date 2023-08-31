@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+}
+/* For screens narrower than 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* For screens wider than 768px */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row-reverse;
+    }
+}
