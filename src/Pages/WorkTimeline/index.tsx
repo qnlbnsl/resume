@@ -3,7 +3,7 @@ import React from "react";
 import { Chrono } from "react-chrono";
 import { items } from "../../Data/workex";
 
-import WorkTimelineCard from "./../WorkTimelineCard";
+import WorkTimelineCard from "./../../Components/WorkTimelineCard";
 import "./style.css";
 
 function WorkTimeline() {

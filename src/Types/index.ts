@@ -1,3 +1,4 @@
+// import Butter from 'buttercms';
 export type WorkExperience = {
     dateStarted: Date;
     dateStopped: Date | null;
@@ -13,3 +14,10 @@ export type FormData = {
     subject: string;
     message: string;
 };
+
+export type Category = {
+    name: string;
+    slug: string;
+}
+
+export type Categories = Category[];

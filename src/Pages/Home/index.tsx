@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import HeroPicture from "../HeroPicture";
-import Intro from "../IntroCarousel";
+import HeroPicture from "./../../Components/HeroPicture";
+import Intro from "./../../Components/IntroCarousel";
 function Home() {
     return (
         <div className="container">
