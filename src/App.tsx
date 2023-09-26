@@ -11,8 +11,7 @@ import TabBar from './Components/TabBar';
 import NotFound from './Components/NotFound';
 import Footer from './Components/Footer';
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import './custom.scss';
+// import './custom.scss';
 import WorkTimeline from './Pages/WorkTimeline';
 import Hobbies from './Pages/Hobbies';
 function App() {

@@ -1,10 +1,9 @@
 import Butter from "buttercms";
 import { Categories } from "../../Types";
-import { butter } from "./buttercms";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 
-export const GetCategories = () => {
+export const GetCategories = async () => {
     const [categories, setCategories] = useState<Butter.Category<string>[] | never[]>([]);
 
     useEffect(() => {

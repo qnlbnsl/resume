@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Butter from "buttercms";
 import Spinner from 'react-bootstrap/Spinner';
-
-import { butter } from "../../Utils/blogUtils/buttercms";
 
 import SEO from "./../../Components/SEO";
 import NotFound from "../../Components/NotFound";
 
 import BlogWidget from "../../Components/BlogWidget";
 
-import {GetCategories} from '../../Utils/blogUtils/GetCategories'
+import {GetCategories, GetPost} from '../../Utils/blogUtils'
+import {Entry, EntrySkeletonType} from 'contentful'
 
 
 const placeholder = "/static/images/placeholder.png";
@@ -20,7 +18,7 @@ const placeholder = "/static/images/placeholder.png";
 const Article = () => {
     const [error, setError] = useState(false);
     const [loader, setLoader] = useState(true);
-    const [article, setArticle] = useState<Butter.Post<string, string>>();
+    const [article, setArticle] = useState<Entry<EntrySkeletonType, undefined, string>>();
 
     const { slug } = useParams();
     //   if (!slug) return (<NotFound />)
@@ -30,10 +28,10 @@ const Article = () => {
         const loadData = async () => {
             if (!slug) return;
             try {
-                const article = await butter.post.retrieve(slug);
-                if (!article || !article.data || !article.data.data)
+                const article = await GetPost(slug);
+                if (!article || !article.fields)
                     throw new Error("Article not found");
-                setArticle(article.data.data);
+                setArticle(article);
             } catch (error) {
                 setError(true);
             }
